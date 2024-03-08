@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1D1F2A; /* Royal color */
+            margin: 0;
+            padding: 0;
+            color: #fff; /* Text color */
+        }
+        header {
+            background-color: #333; /* Dark background color */
+            color: #e6fcec;
+            text-align: center;
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #logo {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            border-radius: 50%;
+            max-width: 60px;
+            margin-bottom: 10px; /* Add some space below the logo */
+        }
+        #buyNowBtnContainer {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px; /* Add margin to separate from the header */
+        }
+        #buyNowBtn {
+            max-width: 350px; /* Adjust the size of your button */
+            padding: 15px;
+            border: none;
+            background-color: #333; /* Dark background color */
+            color: #fff; /* Button text color */
+            font-size: 2.4em; /* Larger font size */
+            font-weight: bold; /* Bold font */
+            text-decoration: none;
+            cursor: pointer;
+            position: relative;
+        }
+        #buyNowBtn::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 3px; /* Adjust the thickness of the line */
+            bottom: 0;
+            left: 0;
+            background-color: #ffcc00; /* Adjust the color of the illuminating effect */
+            box-shadow: 0 0 10px rgba(255, 204, 0, 0.7); /* Adjust the shadow properties */
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-in-out;
+        }
+        #buyNowBtn:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: #4f4d48; /* Change text color inside sections */
+        }
+        h1, h2 {
+            color: #4f4d48; /* Darker text color for headings */
+        }
+        p {
+            color: #888; /* Lighter text color */
+        }
+        ul {
+            color: #4f4d48;
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+        /* Three-dot menu */
+        .menu-container {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            cursor: pointer;
+            z-index: 1;
+        }
+        img{
+        	height: 100px;
+        width:100px;
+        border-radius:7px;
+        
+}
+        .menu {
+            width: 30px;
+            height: 5px;
+            background-color: #fff;
+            margin: 6px 0;
+        }
+        .social-links {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 10px;
+        }
+        .social-links a {
+            color: #fff; /* Social media link color */
+            margin-right: 15px;
+            text-decoration: none;
+        }
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container" onclick="toggleMenu()">
+        <div class="menu"></div>
+        <div class="menu"></div>
+        <div class="menu"></div>
+    </div>
+    <header>
+        <img src="https://i.postimg.cc/dV80Vp1B/xx4lme-4df0cd62881f1a1942c6e0b13dda6c14d17de7e5.jpg" alt="Your Logo" id="logo">
+        <h1 style="color:#e6fcec;">Cactus Education </h1>
+        <p>Web Developer | Designer</p>
+    </header>
+
+    <section>
+        <h2>Welcome to the world of Biology</h2>
+        <p><br><br><br><br>
+        	অফলাইনের পাশাপাশি অনলাইনে অনন্যা সেবা। যদি তোমরা কোন ক্লাস মিস করে যাও তাহলে যেন এই ওয়েবসাইট থেকে তোমরা তোমাদের সেই ক্লাসটি করে নিতে পারো। যেন কোনভাবেই তোমাদের কোনরকম ক্ষতি না হয়।<br>
+        <img src="https://i.postimg.cc/mZvzJmB6/FB-IMG-1702842602596.jpg"><img style="height:100px; width:250px"src="https://i.postimg.cc/NFzmxtMx/3.jpg">
+</p>
+    </section>
+
+    <div id="buyNowBtnContainer">
+        <a href="Log.html"  id="buyNowBtn">
+           Get Access Now!
+        </a>
+    </div>
+
+    <section>
+        <h2 style="color:#f5429b">Meet with our  Teacher panels</h2>
+       <b> <ul>
+            <li>Anwar Masud Rizvi sir</li>
+            <li>Coming soon</li>
+            <li>Coming soon</li>
+            <li>Coming soon</li>
+            <li>Coming soon</li>
+           
+        </ul></b>
+
+        <h2 style="text-align:center;color:#f5429b">Success story</h2>
+        <ul>
+            <li><a href="#">Project 1</a> - Description of Project 1.</li>
+            <li><a href="#">Project 2</a> - Description of Project 2.</li>
+            <!-- Add more projects as needed -->
+        </ul>
+    </section>
+<br><br><br><br><br>
+    <section>
+    	<h2 style="color:red;">Disclaimer<b>:</b><h2>
+    	<p style="color:black;">alterides are reserved don't copy anything.</p>
+       <ul> <h2>Contact</h2><ul>
+        <p>Email: sheakhshadin@gmail.com</p>
+        <p>LinkedIn: <a href="Fo.html">linkedin.com/in/yourname</a></p>
+        <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+    </section>
+
+    <div class="social-links">
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        <a href="https://www.youtube.com" target="_blank">YouTube</a>
+    </div>
+
+    <footer>
+        <p>© 2023 Cactus | Developed by Sheikh Shadhin</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            // Add your menu toggle logic here
+            console.log('Toggle menu');
+        }
+    </script>
+</body>
+</html>
